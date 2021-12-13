@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="menu hidden">
+                <div class="menu__burgerBar">
+                    <span class="hide">메뉴</span>
+                    <div class="menu__bar">
+                        <span class="menu__line"></span>
+                    </div>
+                </div>
+                <div class="menu__inner">
+                    <div class="menu__top">
+                        <a href="#" class="menu__language">
+                            <span>English</span>
+                        </a>
+                    </div>
+                    <div class="menu__login-wrap">
+                        <a href="login.html">
+                            <span>로그인</span>
+                        </a>
+                        <a href="term.html">
+                            <span>회원가입</span>
+                        </a>
+                    </div>
+                    <div class="gnb">
+                        <ul class="gnb__mainMenu">
+                            <li class="gnb__mainMenu-list">
+                                <a href="#"><span>봉사단 소개</span></a>
+                                <ul class="gnb__sub-menu">
+                                    <li><a href="#">봉사단개요</a></li>
+                                    <li><a href="#">활동소개</a></li>
+                                    <li><a href="#">활동신청</a></li>
+                                    <li><a href="#">소개</a></li>
+                                    <li><a href="#">찾아오시길</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb__mainMenu-list">
+                                <a href="#"><span>소통참여</span></a>
+                                <ul class="gnb__sub-menu">
+                                    <li><a href="#">봉사단개요</a></li>
+                                    <li><a href="#">활동소개</a></li>
+                                    <li><a href="#">활동신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb__mainMenu-list">
+                                <a href="#"><span>봉사단모집</span></a>
+                                <ul class="gnb__sub-menu">
+                                    <li><a href="#">봉사단개요</a></li>
+                                    <li><a href="#">활동소개</a></li>
+                                    <li><a href="#">활동신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb__mainMenu-list">
+                                <a href="#"><span>소식</span></a>
+                                <ul class="gnb__sub-menu">
+                                    <li><a href="#">봉사단개요</a></li>
+                                    <li><a href="#">활동소개</a></li>
+                                    <li><a href="#">활동신청</a></li>
+                                </ul>
+                            </li>
+                            <li class="gnb__mainMenu-list">
+                                <a href="#"><span>제증명 발급센터</span></a>
+                                <ul class="gnb__sub-menu">
+                                    <li><a href="#">봉사단개요</a></li>
+                                    <li><a href="#">활동소개</a></li>
+                                    <li><a href="#">활동신청</a></li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="hero__inner hero__inner--borderBottom hero__inner--paddingTop">
+                <div class="step">
+                    <h2 class="step__title">회원가입</h2>
+                    <div class="step__menu">
+                        <div class="step__list">
+                            <span class="step__listnumber">1</span>
+                        </div>
+                        <span class="step__name">
+                            약관동의
+                        </span>
+                    </div>
+                    <div class="step__menu">
+                        <div class="step__list active">
+                            <span class="step__listnumber">2</span>
+                        </div>
+                        <span class="step__name">
+                            정보입력
+                        </span>
+                    </div>
+                    <div class="step__menu">
+                        <div class="step__list">
+                            <span class="step__listnumber">3</span>
+                        </div>
+                        <span class="step__name">
+                            가입완료
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="inner">
+            <div class="border">
+                <form>
+                    <div class="input__box">
+                        <span class="input__title">
+                            아이디
+                        </span>
+                        <input type="text" placeholder="4 ~ 15자의 영문숫자 혼용가능">
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            비밀번호
+                        </span>
+                        <input type="password" placeholder="9~ 24자 이하, 영문 숫자 특수문자 조합">
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            비밀번호 확인
+                        </span>
+                        <input type="password" placeholder="">
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            이름
+                        </span>
+                        <input type="text" placeholder="예)홍길동">
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            이메일
+                        </span>
+                        <input type="email" placeholder="예)kivworld@kiv.co.kr">
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            생년월일
+                        </span>
+                        <input type="number" placeholder="예)900507" required>
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            주소
+                        </span>
+                        <div class="input__type02">
+                            <input type="number" class="input__address" disabled>
+                            <div class="hyphen"></div>
+                            <input type="number" class="input__address" disabled>
+                            <input type="submit" value="우편번호">
+                        </div>
+                        <input type="text" disabled>
+                        <input type="text" placeholder="상세주소 입력">
+                    </div>
+                    <div class="input__box">
+                        <span class="input__title">
+                            휴대폰
+                        </span>
+                        <div class="input__type03">
+                        <select name="phone-number">
+                            <option value="선택">선택</option>
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                        </select>
+                        <input type="number">
+                        <input type="number">
+                        </div>
+                    </div>
+                    <div class="input__box input__box--background">
+                        <span class="input__title">
+                            전화번호(자택)
+                        </span>
+                        <div class="input__type03">
+                        <select name="home-number">
+                            <option value="선택">선택</option>
+                            <option value="02">02</option>
+                            <option value="033">033</option>
+                            <option value="031">031</option>
+                            <option value="043">043</option>
+                        </select>
+                        <input type="number">
+                        <input type="number">
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <div class="checkbox__wrap">
+                            <input type="checkbox" id="check01">
+                            <label for="check01">로봇아닙니다</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <input type="submit" value="가입하기" class="input__submit">
+        </div>
+
+        <footer>
+            <ul class="footer__menu">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일수신 무단 수집거부</a></li>
+            </ul>
+
+            <p class="copyright">COPYRIGHT&#169;UI-LAB</p>
+        </footer>
+    </div>
+</body>
+</html>
