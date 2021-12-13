@@ -116,6 +116,8 @@ input, select{
 input:focus {
     border-color: #db6a2e;
 }
+
+
 select {
     background-color: #fefefe;
     -webkit-appearance:none;
@@ -129,6 +131,7 @@ select {
     background-color: #db6a2e;
     color: #fefefe;
     border: none;
+    border-radius: inherit;
 }
 
 .input__box:first-child {
