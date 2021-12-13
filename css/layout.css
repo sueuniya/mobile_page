@@ -1,0 +1,199 @@
+
+/* 메뉴 바 */
+
+
+.menu__burgerBar{ 
+    z-index: 10;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    left: calc(100% - 35px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.menu__line,
+.menu__bar::before,
+.menu__bar::after{
+    position: absolute;
+    width: 22px;
+    height:3px;
+    background-color: #171516;
+    transition: all .2s;
+
+
+}
+.menu__line{
+    top: 50%;
+    transform:translateY(-50%);
+}
+.menu__bar::before,
+.menu__bar::after{
+    content: '';
+}
+.menu__bar::before{
+    top: 0%;
+}
+.menu__bar::after{
+    bottom: 0;
+}
+.menu__line {
+    position: absolute;
+}
+
+.menu__burgerBar.active .menu__bar::before{
+    top: 50%;
+    transform: rotate(45deg);
+    transition: all .2s;
+}
+.menu__burgerBar.active .menu__bar::after{
+    top: 50%;
+    transform: rotate(-45deg);
+    transition: all .2s;
+}
+.menu__burgerBar.active .menu__line{
+    display: none;
+}
+
+/* 메뉴바 */
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    overflow-y: scroll;
+    background-color: rgba(165, 165, 165, 0.386);
+    z-index: 5;
+
+}
+.menu.hidden {
+    right: -100%;
+    background-color: inherit;
+    position: inherit;
+    transition:all .3s;
+}
+.menu.hidden .menu__inner{
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    right: -100px;
+    transition-delay: 0;
+    transition: all .2s;
+}
+.menu__inner {
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    width: 80%;
+    height: 100%;
+    background-color: #Fff;
+    opacity: 1;
+    transition-delay: .2s;
+    transition-duration: 0.2s;
+}
+.menu__top {
+    width: 100%;
+    height: 50px;
+    background-color: #fefefe;
+}
+.menu__language {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 10px 15px;
+    font-size: 13px;
+}
+.menu__language span::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    background: url("../img/bg__english") no-repeat center;
+    background-size: contain;
+}
+.menu__login-wrap{
+    font-size: 0;
+}
+.menu__login-wrap a{
+    display: inline-block;
+    width: 50%;
+    padding: 17px 0 14px;
+    font-size: 16px;
+    color:#f3f3f3;
+    text-align: center;
+    background: #db6a2e;
+}
+.menu__login-wrap a:first-child{
+    border-right: 3px solid #e49563;
+}
+.gnb__mainMenu {
+    background: #fefefe;
+}
+.gnb__mainMenu a {
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+    text-align: left;
+    text-indent: 14px;
+}
+.gnb__mainMenu-list.active .gnb__sub-menu {
+    display: block;
+}
+.gnb__mainMenu-list.active span {
+    color: #da692a;
+}
+.gnb__mainMenu-list span::after{
+    content: '';
+    float: right;
+    margin-right: 13px;
+    width: 18px;
+    height: 14px;
+    background: url("../img/gnb__arrow-open") no-repeat;
+    background-size: contain;
+}
+.gnb__mainMenu-list.active span::after{
+    background-image: url("../img/gnb__arrow-close");
+}
+.gnb__mainMenu-list .gnb__sub-menu{
+    display: none;
+    background: #eaeaea;
+}
+.gnb__sub-menu a{
+    font-size: 14px;
+}
+
+
+
+/* footer */
+
+footer {
+    margin-top: 60px;
+} 
+.footer__menu{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 17px 0;
+    border-top: 1px solid #cdcdcd;
+    background-color: #ececec;
+}
+.footer__menu li {
+    padding: 0 10px;
+    border-right: 1px solid #cacaca;
+}
+.footer__menu li:last-child{
+    border-right: 0;
+}
+.footer__menu li a {
+    display: block;
+    font-size: 12px;
+}
+.copyright {
+    margin: 14px 0 18px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
