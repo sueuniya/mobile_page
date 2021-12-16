@@ -99,25 +99,30 @@
      background: #ccd0d3;
  }
  .select__list{
-     display: flex;
      margin-top: 20px;
+     font-size: 0;
  }
 .select__list li {
-    width: 50%;
+    width: calc(50% - 1px);
+    display: inline-block;
 }
-.select__list li:first-child{
-    border-right: 1px solid #e5e5e5;
-}
-
 .select__list li a {
-    display: block;
-    padding: 0px 5px;
-    text-align: center;
+    display: inline-block;
+    width: calc(100% - 1px);
+    padding: 5px 0;
     font-size: 13px;
-    color: #545454;
-   
+    text-align: center;
 }
-
+.select__list li::after{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #cacaca;
+}
+.select__list li:last-child::after{
+    display: none;
+}
 
 /* 회원가입 -약관 */
 

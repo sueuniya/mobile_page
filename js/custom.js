@@ -1,9 +1,20 @@
 $(function(){
+  // $('.menu__burgerBar').click(function(){
+  //   $('.menu__burgerBar').toggleClass('active');
+  //   $('.menu').toggleClass('hidden');
+  //   $('body').toggleClass('hidden');
+  // });
+
   $('.menu__burgerBar').click(function(){
     $('.menu__burgerBar').toggleClass('active');
-    $('.menu').toggleClass('hidden');
-    $('body').toggleClass('hidden')
-  });
+    if($(this).hasClass('active')){
+      $('body').addClass('hidden');
+      $('.menu').removeClass('hidden');
+    }else{
+      $('body').removeClass('hidden');
+      $('.menu').addClass('hidden');
+    }
+  }); 
 
 
 
@@ -17,6 +28,7 @@ $(function(){
        $(this).children('.gnb__sub-menu').slideUp();
     }
  });
+
 
   $(document).ready(function() {
     $(".checkAll").click(function() {

@@ -121,45 +121,58 @@
             <div class="border">
                 <form>
                     <div class="input__box">
-                        <span class="input__title">
-                            아이디
-                        </span>
-                        <input type="text" placeholder="4 ~ 15자의 영문숫자 혼용가능">
+                        <label for="userId">
+                            <span class="input__title">
+                                아이디
+                            </span>
+                        </label>
+                        <input type="text" id="userId" placeholder="4 ~ 15자의 영문숫자 혼용가능" title="아이디 4 ~ 15자의 영문숫자 혼용가능" required  />
                     </div>
                     <div class="input__box">
-                        <span class="input__title">
-                            비밀번호
-                        </span>
-                        <input type="password" placeholder="9~ 24자 이하, 영문 숫자 특수문자 조합">
+                        <label for="userpassword">
+                            <span class="input__title">
+                                비밀번호
+                            </span>
+                        </label>
+                        <input type="password" id="userpassword" placeholder="9~ 24자 이하, 영문 숫자 특수문자 조합" title="비밀번호 9~ 24자 이하, 영문 숫자 특수문자 조합" required>
                     </div>
                     <div class="input__box">
+                        <label for="userpasswordcomfirm"></label>
                         <span class="input__title">
                             비밀번호 확인
                         </span>
-                        <input type="password" placeholder="">
+                        <input type="password" id="userpasswordcomfirm" title="비밀번호 확인" required />
                     </div>
                     <div class="input__box">
-                        <span class="input__title">
-                            이름
-                        </span>
-                        <input type="text" placeholder="예)홍길동">
+                        <label for="username">
+                            <span class="input__title">
+                                이름
+                            </span>
+                        </label>
+                        <input type="text" id = "username" placeholder="예)홍길동" title="이름 예)홍길동" required />
                     </div>
                     <div class="input__box">
-                        <span class="input__title">
-                            이메일
-                        </span>
-                        <input type="email" placeholder="예)kivworld@kiv.co.kr">
+                        <label for="useremail">
+                            <span class="input__title">
+                                이메일
+                            </span>
+                        </label>
+                        <input type="email" id="useremail" placeholder="예)kivworld@kiv.co.kr" title="이메일" required /> 
                     </div>
                     <div class="input__box">
-                        <span class="input__title">
-                            생년월일
-                        </span>
-                        <input type="number" placeholder="예)900507" required>
+                        <label for="userbirthday">
+                            <span class="input__title">
+                                생년월일
+                            </span>
+                        </label>
+                        <input type="number" id="userbirthday" placeholder="예)900507" title="생년월일 예)900507" required />
                     </div>
                     <div class="input__box">
-                        <span class="input__title">
-                            주소
-                        </span>
+                        <label for="userAddress">
+                            <span class="input__title">
+                                주소
+                            </span>
+                        </label>
                         <div class="input__type02">
                             <input type="number" class="input__address" disabled>
                             <div class="hyphen"></div>
@@ -167,36 +180,40 @@
                             <input type="submit" value="우편번호">
                         </div>
                         <input type="text" disabled>
-                        <input type="text" placeholder="상세주소 입력">
+                        <input type="text" placeholder="상세주소 입력" id="userAddress" title="주소 상세주소 입력" />
                     </div>
                     <div class="input__box">
-                        <span class="input__title">
-                            휴대폰
-                        </span>
+                        <label for="userPhoneNumber">
+                            <span class="input__title">
+                                휴대폰
+                            </span>
+                        </label>
                         <div class="input__type03">
                         <select name="phone-number">
                             <option value="선택">선택</option>
                             <option value="010">010</option>
                             <option value="011">011</option>
                         </select>
-                        <input type="number">
-                        <input type="number">
+                        <input type="number" id="userPhoneNumber" title="휴대폰 번호">
+                        <input type="number" title="휴대폰 번호">
                         </div>
                     </div>
                     <div class="input__box input__box--background">
-                        <span class="input__title">
-                            전화번호(자택)
-                        </span>
+                        <label for="userHomeNumber">
+                            <span class="input__title">
+                                전화번호(자택)
+                            </span>
+                        </label>
                         <div class="input__type03">
-                        <select name="home-number">
-                            <option value="선택">선택</option>
-                            <option value="02">02</option>
-                            <option value="033">033</option>
-                            <option value="031">031</option>
-                            <option value="043">043</option>
-                        </select>
-                        <input type="number">
-                        <input type="number">
+                            <select name="home-number">
+                                <option value="선택">선택</option>
+                                <option value="02">02</option>
+                                <option value="033">033</option>
+                                <option value="031">031</option>
+                                <option value="043">043</option>
+                            </select>
+                            <input type="number" id="userHomeNumber" />
+                            <input type="number" title="자택 전화번호" />
                         </div>
                     </div>
                     <div class="checkbox">

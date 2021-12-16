@@ -62,7 +62,7 @@
     width: 100%;
     height: 100%;
     right: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
     background-color: rgba(165, 165, 165, 0.386);
     z-index: 5;
 
@@ -178,15 +178,19 @@ footer {
     border-top: 1px solid #cdcdcd;
     background-color: #ececec;
 }
-.footer__menu li {
-    padding: 0 10px;
-    border-right: 1px solid #cacaca;
+.footer__menu li::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background-color: #cacaca;;
 }
-.footer__menu li:last-child{
-    border-right: 0;
+.footer__menu li:last-child:after {
+    display: none;
 }
 .footer__menu li a {
-    display: block;
+    display: inline-block;
+    padding: 5px 10px;
     font-size: 12px;
 }
 .copyright {
